@@ -34,7 +34,7 @@ if resp.status_code != 200:
 stores = json.loads(resp.text)
 
 #PRINT ANY DATA YOU WANT BY INSERTING INDEX
-#print(stores['stores'][])
+#print(stores['stores'][0])
 
 c.execute("""CREATE TABLE IF NOT EXISTS stores (storeName TEXT, address TEXT, telephone TEXT, email TEXT, website TEXT, fax TEXT, desc TEXT, lat REAL, long REAL, cat TEXT)""")
         
