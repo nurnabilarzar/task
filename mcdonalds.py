@@ -50,5 +50,5 @@ for s in stores ["stores"]:
     (s["name"],s["address"],s["telephone"],s["email"],s["website"],s["fax"], s["description"], s["lat"], s["lng"], p))
 
 conn.commit()
- 
+
 conn.close()
